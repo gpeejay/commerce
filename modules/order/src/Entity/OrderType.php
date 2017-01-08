@@ -2,7 +2,7 @@
 
 namespace Drupal\commerce_order\Entity;
 
-use Drupal\Core\Config\Entity\ConfigEntityBundleBase;
+use Drupal\commerce\Entity\CommerceBundleEntityBase;
 
 /**
  * Defines the order type entity class.
@@ -52,21 +52,7 @@ use Drupal\Core\Config\Entity\ConfigEntityBundleBase;
  *   }
  * )
  */
-class OrderType extends ConfigEntityBundleBase implements OrderTypeInterface {
-
-  /**
-   * The order type ID.
-   *
-   * @var string
-   */
-  protected $id;
-
-  /**
-   * The order type label.
-   *
-   * @var string
-   */
-  protected $label;
+class OrderType extends CommerceBundleEntityBase implements OrderTypeInterface {
 
   /**
    * The order type workflow ID.
